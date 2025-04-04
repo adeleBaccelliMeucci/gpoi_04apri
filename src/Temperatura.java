@@ -18,15 +18,15 @@ public class Temperatura {
 
     /**
      * Costruisce un oggetto Temperatura a partire da un valore in gradi Celsius.
-     * @param valoreCelsius
+     * @param valoreCelsius il valore iniziale della temperatura
      */
     public Temperatura(double valoreCelsius) {
         this.valoreCelsius = valoreCelsius;
     }
 
     /**
-     * Diminuisce la temperatura di un certo valore.
-     * @param delta  - la quantitÃ  di gradi da sottrarre alla temperatura corrente
+     * Aumenta la temperatura di un certo valore.
+     * @param delta la quantitÃ  di gradi da sottrarre alla temperatura corrente
      */
     public void aumenta(double delta){
         this.valoreCelsius = this.valoreCelsius + delta;
@@ -34,7 +34,7 @@ public class Temperatura {
 
     /**
      * Diminuisce la temperatura di un certo valore.
-     * @param delta  - la quantitÃ  di gradi da sottrarre alla temperatura corrente
+     * @param delta la quantitÃ  di gradi da sottrarre alla temperatura corrente
      */
     public void diminuisci(double delta){
         this.valoreCelsius = this.valoreCelsius - delta;
@@ -57,7 +57,7 @@ public class Temperatura {
     }
 
     /**
-     * Restituisce una rappresentazione testuale della temperatura. Esempio: Temperatura: 25.00 °C - 77.00 °F - 298.15 K
+     * Restituisce una rappresentazione testuale della temperatura. <i><b> Esempio: </b></i> Temperatura: 25.00 °C - 77.00 °F - 298.15 K
      * @overrides toString in class Object
      * @return una stringa che rappresenta la temperatura in Celsius, Fahrenheit e Kelvin
      */
